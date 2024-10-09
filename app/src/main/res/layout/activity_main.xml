@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#68885F"
+    android:background="@color/kolor_tla"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textViewPolecenie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
+        android:textSize="@dimen/czcionka_rozmiar"
         android:layout_margin="16dp"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -28,8 +28,8 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#124345"
-            android:layout_margin="16dp"
+            android:backgroundTint="@color/morski"
+            android:layout_margin="@dimen/margines_przyciski"
             android:onClick="dobraOdpowiedz"
             android:contentDescription="morski"
             />
@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#12ee45"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margines_przyciski"
             android:onClick="dobraOdpowiedz"/>
 
         <Button
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#f0f0ff"
             android:onClick="zlaOdpowiedz"
-            android:layout_margin="16dp"/>
+            android:layout_margin="@dimen/margines_przyciski"/>
     </LinearLayout>
 
     <LinearLayout
@@ -62,14 +62,14 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#972219"
             android:onClick="zlaOdpowiedz"
-            android:layout_margin="16dp"/>
+            android:layout_margin="@dimen/margines_przyciski"/>
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#03A9F4"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margines_przyciski"
             android:onClick="dobraOdpowiedz"/>
 
         <Button
@@ -77,7 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#ffee45"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margines_przyciski"
             android:onClick="dobraOdpowiedz"/>
     </LinearLayout>
 
