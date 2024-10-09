@@ -10,13 +10,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewPolecenie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:layout_margin="16dp"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:text="Które kolory nie występują we fladze Polski?" />
+        android:text="@string/polecenie" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -29,6 +30,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#124345"
             android:layout_margin="16dp"
+            android:onClick="dobraOdpowiedz"
+            android:contentDescription="morski"
             />
 
         <Button
@@ -36,13 +39,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#12ee45"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:onClick="dobraOdpowiedz"/>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#f0f0ff"
+            android:onClick="zlaOdpowiedz"
             android:layout_margin="16dp"/>
     </LinearLayout>
 
@@ -56,6 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#972219"
+            android:onClick="zlaOdpowiedz"
             android:layout_margin="16dp"/>
 
         <Button
@@ -63,14 +69,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#03A9F4"
-            android:layout_margin="16dp" />
+            android:layout_margin="16dp"
+            android:onClick="dobraOdpowiedz"/>
 
         <Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#ffee45"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:onClick="dobraOdpowiedz"/>
     </LinearLayout>
 
 </LinearLayout>
